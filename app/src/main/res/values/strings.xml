@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">FlixDB</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="about">About</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="About_App">This is a simple app that showcases the Top Rated and Popular movies.</string>
+    <string name="by_andre_fernando">By Andre Fernando</string>
+    <string name="pref_default_lang_label">Default Language</string>
+    <string name="pref_allow_adult_label">Allow adult content?</string>
+    <string name="settings">Settings</string>
+    <string name="pref_default_lang_key">default_language</string>
+    <string name="pref_allow_adult_key">allow_adult</string>
+    <string name="pref_allow_adult_on">Allow adult content</string>
+    <string name="pref_allow_adult_off">Disallow adult content</string>
+    <string name="label_favourites">Favourites</string>
+    <string name="label_trailers">Trailers</string>
+    <string name="label_reviews">Reviews</string>
+
+    <string-array name="pref_array_lang_values">
+        <item>de</item>
+        <item>en-US</item>
+        <item>en-UK</item>
+        <item>es</item>
+        <item>fr</item>
+        <item>hi</item>
+        <item>it</item>
+        <item>pt</item>
+    </string-array>
+
+    <string-array name="pref_array_lang_labels">
+        <item>German</item>
+        <item>English US</item>
+        <item>English UK</item>
+        <item>Spanish</item>
+        <item>French</item>
+        <item>Hindi</item>
+        <item>Italian</item>
+        <item>Portuguese</item>
+    </string-array>
+    <string name="pref_clearfavourites_label">Clear Favourites</string>
+    <string name="pref_clearfavourites_key">clear_favourites_key</string>
+    <string name="pref_clearfavourites_summary">Clears all your favourite movies, cannot be undone!</string>
+    <string name="alert_clearfav_title">Clear all favourites</string>
+    <string name="alert_clearfav_message">This will clear all your favourite movies. This cannot be undone!</string>
+</resources>

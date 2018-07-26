@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundColour"
+    tools:context="comandre_fernando.httpsgithub.flixdb.ui.AboutActivity"
+    tools:ignore="Overdraw">
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:src="@mipmap/flixdb_logo_no_background"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/Margin_5dp"
+                android:padding="@dimen/RecyclerViewMargin"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/Headings_1"
+                android:text="@string/app_name"
+                android:layout_margin="@dimen/Margin_5dp"
+                android:padding="@dimen/RecyclerViewMargin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/Headings_1"
+                android:text="@string/by_andre_fernando" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/github"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_margin="@dimen/Margin_5dp"
+                android:padding="@dimen/RecyclerViewMargin"
+                android:onClick="OpenGithub"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/Headings_2"
+                android:text="@string/About_App"
+                android:layout_margin="@dimen/Margin_5dp"
+                android:padding="@dimen/RecyclerViewMargin"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tmdb_green_land"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:layout_margin="@dimen/Margin_5dp"
+                android:padding="@dimen/RecyclerViewMargin"
+                android:onClick="OpenTmdb"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

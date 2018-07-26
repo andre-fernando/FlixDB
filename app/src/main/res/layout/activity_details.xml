@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryColor"
+    tools:context="comandre_fernando.httpsgithub.flixdb.ui.DetailsActivity"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundColour">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <android.support.constraint.Guideline
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/guide_image_right"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.4"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/iv_Detail_Poster"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/guide_image_right"
+
+                android:padding="@dimen/RecyclerViewMargin"
+                tools:ignore="ContentDescription" />
+
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Detail_Release_Date"
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/guide_image_right"
+                android:layout_margin="@dimen/RecyclerViewMargin"
+                android:textSize="@dimen/Headings_2"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_Detail_Avg_Rating"
+
+                app:layout_constraintTop_toBottomOf="@+id/tv_Detail_Release_Date"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/guide_image_right"
+                android:layout_margin="@dimen/RecyclerViewMargin"
+                android:textSize="@dimen/Headings_2"/>
+
+            <TextView
+                android:id="@+id/tv_Detail_Title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/RecyclerViewMargin"
+                android:layout_marginRight="@dimen/RecyclerViewMargin"
+
+                android:textSize="@dimen/Headings_2"
+                app:layout_constraintTop_toBottomOf="@id/iv_Detail_Poster"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_Detail_Overview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/RecyclerViewMargin"
+                android:padding="@dimen/RecyclerViewMargin"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_Detail_Title" />
+
+            <TextView
+                android:id="@+id/tv_trailers_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/RecyclerViewMargin"
+                app:layout_constraintTop_toBottomOf="@id/tv_Detail_Overview"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/label_trailers"
+                android:textSize="@dimen/Headings_2"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_trailer"
+                app:layout_constraintTop_toBottomOf="@id/tv_trailers_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/Margin_5dp"/>
+
+            <TextView
+                android:id="@+id/tv_reviews_label"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/RecyclerViewMargin"
+                app:layout_constraintTop_toBottomOf="@id/rv_trailer"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/label_reviews"
+                android:textSize="@dimen/Headings_2"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_review"
+                app:layout_constraintTop_toBottomOf="@id/tv_reviews_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/Margin_5dp"/>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

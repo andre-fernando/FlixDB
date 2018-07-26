@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="RecyclerViewMargin">10dp</dimen>
+    <dimen name="TitleSize">10sp</dimen>
+    <dimen name="Headings_1">25sp</dimen>
+    <dimen name="Headings_2">20sp</dimen>
+    <dimen name="body_1">18sp</dimen>
+    <dimen name="Margin_5dp">5dp</dimen>
+    <dimen name="card_elevation">8dp</dimen>
+</resources>

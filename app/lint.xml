@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconDipSize">
+        <ignore path="src/main/res/drawable-hdpi/ic_info_white_24dp.png" />
+        <ignore path="src/main/res/drawable-hdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-hdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-mdpi/ic_info_white_24dp.png" />
+        <ignore path="src/main/res/drawable-mdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xhdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xhdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_info_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_info_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxxhdpi/ic_info_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxxhdpi/ic_settings_white_24dp.png" />
+        <ignore path="src/main/res/drawable-xxxhdpi/ic_settings_white_24dp.png" />
+    </issue>
+</lint>

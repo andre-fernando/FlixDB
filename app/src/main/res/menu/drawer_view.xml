@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_TopMovies"
+            android:icon="@drawable/ic_movie_white_24dp"
+            android:title="@string/top_rated_movies"/>
+        <item
+            android:id="@+id/drawer_PopularMovies"
+            android:icon="@drawable/ic_movie_white_24dp"
+            android:title="@string/popular_movies"/>
+        <item
+            android:id="@+id/drawer_Favourites"
+            android:icon="@drawable/favourite_drawer_icon_24dp"
+            android:title="@string/label_favourites"/>
+
+        <item
+            android:id="@+id/drawer_Settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/settings"/>
+        <item
+            android:id="@+id/drawer_About"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="@string/about"/>
+    </group>
+</menu>

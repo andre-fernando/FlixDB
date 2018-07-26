@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_array_lang_labels"
+        android:entryValues="@array/pref_array_lang_values"
+        android:title="@string/pref_default_lang_label"
+        android:key="@string/pref_default_lang_key"/>
+
+    <CheckBoxPreference
+        android:title="@string/pref_allow_adult_label"
+        android:key="@string/pref_allow_adult_key"
+        android:summaryOn="@string/pref_allow_adult_on"
+        android:summaryOff="@string/pref_allow_adult_off"
+        android:defaultValue="@bool/pref_allow_adult_default"/>
+
+    <Preference
+        android:title="@string/pref_clearfavourites_label"
+        android:key="@string/pref_clearfavourites_key"
+        android:summary="@string/pref_clearfavourites_summary"/>
+
+</PreferenceScreen>
